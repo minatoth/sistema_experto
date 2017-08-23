@@ -1,0 +1,61 @@
+.principal
+{
+	padding-top: 5%;
+	width: auto;
+	height: auto;
+	padding-left: 35%;
+}
+.principal2
+{
+	padding-top: 5%;
+	width: auto;
+	height: auto;
+	padding-left: 28%;
+}
+.content
+{
+	margin-top: 7%;
+	border-radius: 2%;
+	height: 375px;
+	width: 430px;
+	padding: 0 4% 0 4%;
+	border: 1px #000 solid;
+	background: rgba(210,255,82,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(210,255,82,1)), color-stop(100%, rgba(145,232,66,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1 );
+}
+.content2
+{
+	border-radius: 2%;
+	height: 520px;
+	width: 620px;
+	padding: 0 4% 0 4%;
+	border: 1px #000 solid;
+	background: rgba(210,255,82,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(210,255,82,1)), color-stop(100%, rgba(145,232,66,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1 );
+}
+.fondo
+{
+	background: url('../imagenes/tres.jpg');
+
+
+}
+.logo
+{
+	padding-left: 19%;
+	padding-top: 5%;
+	height: auto;
+	margin-bottom: 3%;
+
+}

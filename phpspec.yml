@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: uno
+        psr4_prefix: uno
+        src_path: app
