@@ -24,12 +24,12 @@ Diagnostico paciente
       var texto2 = "#text"+j;
       if(j==1)
       {
-        if( $(texto2).val()==1  ){
+        if( $(texto2).val()!=1  ){
+          html=html+pregunta[k].desSin+'<br/>';
           }
         if($(texto).val()!=1)
           {
           k=j-1;
-          html=html+pregunta[k].desSin+'<br/>';
           html=html+pregunta[j].desSin+'<br/>';
           }
       }else{
