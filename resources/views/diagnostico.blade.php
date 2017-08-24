@@ -19,20 +19,21 @@ Diagnostico paciente
     for(var i=2; i<=40;i++)
     {
       var j=i-1;
-      if(j==1){
-        k=j-1;
-        html=html+pregunta[k].desSin+'<br/>';
-      }
+      var pregunta= {!! json_encode($sintomas->toArray()) !!};
       var texto = "#text"+i;
       if( $(texto).val()==1 )
       {
           console.log('no es no');
       }
        else{
+         if(j==1){
+           k=j-1;
+           html=html+pregunta[k].desSin+'<br/>';
+         }else{
         con = con+1;
         total = total + parseInt($(texto).val());
-        var pregunta= {!! json_encode($sintomas->toArray()) !!};
         html=html+pregunta[j].desSin+'<br/>';
+        }
       }
     }
     if (con==0) {
