@@ -255,8 +255,8 @@ Diagnostico paciente
           <div style="display:none" id="ventana5">
           <input type="text" id="resultado5" style="border:none;">
           </div>
+        </div>
           <div class="well" id="resultados5">
-          </div>
           </div>
         </div>
       </div>
