@@ -73,7 +73,7 @@ Diagnostico paciente
         </div>
       </div>
       <div class="modal-footer">
-        <button  data-dismiss="modal" type="button" class="btn btn-info" data-toggle="modal" data-target="#modal2" onclick="javascript:calcular('1','1');">SI</button>
+        <button  data-dismiss="modal" type="button" class="btn btn-info" data-toggle="modal" data-target="#modal2" onclick="javascript:calcular('100','1');">SI</button>
         <button  data-dismiss="modal" type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal2" onclick="javascript:calcular('1','1');">NO</button>
       </div>
     </div><!-- /.modal-content -->
@@ -254,7 +254,7 @@ Diagnostico paciente
           <div class="col-md-4"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('5','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana5">
           <input type="text" id="resultado5" style="border:none;">
-          <div class="well" id="resultados5">
+          <div class="" id="resultados5">
 
           </div>
           </div>
@@ -411,7 +411,7 @@ Diagnostico paciente
           <div class="col-md-4"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('1','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana1">
           <input type="text" id="resultado1" style="border:none;">
-          <div class="well" id="resultados1">
+          <div class="" id="resultados1">
 
           </div>
           </div>
@@ -546,7 +546,7 @@ Diagnostico paciente
           <div class="col-md-4"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('2','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana2" style="border:none;">
           <input type="text" id="resultado2">
-          <div class="well" id="resultados2">
+          <div class="" id="resultados2">
 
           </div>
           </div>
@@ -703,7 +703,7 @@ Diagnostico paciente
           <div class="col-md-4"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('3','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana3">
           <input type="text" id="resultado3"  style="border:none;">
-          <div class="well" id="resultados3">
+          <div class="" id="resultados3">
 
           </div>
           </div>
@@ -860,7 +860,7 @@ Diagnostico paciente
           <div class="col-md-4"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('4','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana4">
           <input type="text" id="resultado4" style="border:none;">
-          <div class="well" id="resultados4">
+          <div class="" id="resultados4">
 
           </div>
           </div>
@@ -951,7 +951,7 @@ Diagnostico paciente
           <div class="col-md-4"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('6','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana6">
           <input type="text" id="resultado6" style="border:none;">
-          <div class="well" id="resultados6">
+          <div class="" id="resultados6">
 
           </div>
           </div>
@@ -1020,7 +1020,7 @@ Diagnostico paciente
           <div class="col-md-4"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('7','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana7">
           <input type="text" id="resultado7" style="border:none;">
-          <div class="well" id="resultados7">
+          <div class="" id="resultados7">
 
           </div>
           </div>
@@ -1133,7 +1133,7 @@ Diagnostico paciente
           <div class="col-md-4"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('8','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana8">
           <input type="text" id="resultado8" style="border:none;">
-          <div class="well" id="resultados8">
+          <div class="" id="resultados8">
 
           </div>
           </div>
