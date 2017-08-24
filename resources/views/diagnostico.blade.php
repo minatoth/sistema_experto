@@ -255,9 +255,14 @@ Diagnostico paciente
           <div style="display:none" id="ventana5">
           <input type="text" id="resultado5" style="border:none;">
           </div>
-          <div class="well" id="resultados5">
+        </div>
+        <div class="container-fluid">
+          <div class="col-md-8 well" id="resultados5">
           </div>
+          <div class="imagengif5">
+
           </div>
+        </div>
         </div>
       </div>
     </div><!-- /.modal-content -->
@@ -410,11 +415,16 @@ Diagnostico paciente
         <div class="col-md-8"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('1','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana1">
           <input type="text" id="resultado1" style="border:none;">
-          <div class="well" id="resultados1">
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="col-md-8 well" id="resultados1">
 
           </div>
+          <div class="imagengif1">
+
           </div>
-          </div>
+        </div>
         </div>
       </div>
     </div><!-- /.modal-content -->
@@ -545,11 +555,16 @@ Diagnostico paciente
         <div class="col-md-8"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('2','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana2" style="border:none;">
           <input type="text" id="resultado2">
-          <div class="well" id="resultados2">
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="col-md-8 well" id="resultados2">
 
           </div>
+          <div class="imagengif2">
+
           </div>
-          </div>
+        </div>
         </div>
       </div>
     </div><!-- /.modal-content -->
@@ -702,11 +717,14 @@ Diagnostico paciente
         <div class="col-md-8"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('3','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana3">
           <input type="text" id="resultado3"  style="border:none;">
-          <div class="well" id="resultados3">
-
           </div>
+        </div>
+        <div class="container-fluid">
+          <div class="col-md-8 well" id="resultados3">
           </div>
+          <div class="imagengif3">
           </div>
+        </div>
         </div>
       </div>
     </div><!-- /.modal-content -->
@@ -859,10 +877,15 @@ Diagnostico paciente
         <div class="col-md-8"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('4','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana4">
           <input type="text" id="resultado4" style="border:none;">
-          <div class="well" id="resultados4">
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="col-md-8 well" id="resultados4">
 
-          </div>
-          </div>
+        </div>
+        <div class="imagengif4">
+
+        </div>
           </div>
         </div>
       </div>
@@ -950,11 +973,16 @@ Diagnostico paciente
         <div class="col-md-8"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('6','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana6">
           <input type="text" id="resultado6" style="border:none;">
-          <div class="well" id="resultados6">
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="col-md-8 well" id="resultados6">
 
           </div>
+          <div class="imagengif6">
+
           </div>
-          </div>
+        </div>
         </div>
       </div>
     </div><!-- /.modal-content -->
@@ -1019,11 +1047,16 @@ Diagnostico paciente
         <div class="col-md-8"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('7','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana7">
           <input type="text" id="resultado7" style="border:none;">
-          <div class="well" id="resultados7">
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="col-md-8 well" id="resultados7">
 
           </div>
+          <div class="imagengif7">
+
           </div>
-          </div>
+        </div>
         </div>
       </div>
     </div><!-- /.modal-content -->
@@ -1132,11 +1165,16 @@ Diagnostico paciente
         <div class="col-md-8"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('8','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana8">
           <input type="text" id="resultado8" style="border:none;">
-          <div class="well" id="resultados8">
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="col-md-8 well" id="resultados8">
 
           </div>
+          <div class="imagengif8">
+
           </div>
-          </div>
+        </div>
         </div>
       </div>
     </div><!-- /.modal-content -->
