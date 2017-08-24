@@ -26,7 +26,7 @@ Diagnostico paciente
       {
         if( $(texto2).val()==1  ){
           }
-        elseif($(texto).val()==1)
+        if($(texto).val()==1)
           {
           k=j-1;
           html=html+pregunta[k].desSin+'<br/>';
