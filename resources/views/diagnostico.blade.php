@@ -24,12 +24,13 @@ Diagnostico paciente
       var texto2 = "#text"+j;
       if(j==1)
       {
-        if( $(texto2).val()==1 ){
+        if( $(texto).val()==1 || $(texto2).val()==1 ){
           }
         else
           {
           k=j-1;
           html=html+pregunta[k].desSin+'<br/>';
+          html=html+pregunta[j].desSin+'<br/>';
           }
       }else{
       if( $(texto).val()==1 )
@@ -43,7 +44,7 @@ Diagnostico paciente
         }
       }
       }
-    
+
     if (con==0) {
       alert("El paciente tiene 0% de probabildad de tener una enfermedad tropical");
     }
