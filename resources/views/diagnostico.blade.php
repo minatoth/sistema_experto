@@ -29,6 +29,7 @@ Diagnostico paciente
          if(j==1){
            k=j-1;
            html=html+pregunta[k].desSin+'<br/>';
+           html=html+pregunta[j].desSin+'<br/>';
          }else{
         con = con+1;
         total = total + parseInt($(texto).val());
