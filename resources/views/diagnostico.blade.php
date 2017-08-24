@@ -24,10 +24,13 @@ Diagnostico paciente
       var texto2 = "#text"+j;
       if(j==1)
       {
-        if($(texto2).val()!=1){
+        if($(texto2).val()==1){
+          }
+        else
+          {
           k=j-1;
           html=html+pregunta[k].desSin+'<br/>';
-        }
+          }
       }else{
       if( $(texto).val()==1 )
       {
