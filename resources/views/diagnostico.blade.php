@@ -21,7 +21,8 @@ Diagnostico paciente
       var j=i-1;
       var pregunta= {!! json_encode($sintomas->toArray()) !!};
       var texto = "#text"+i;
-      if( $(texto).val()==1 )
+      var texto2 = "#text"+j;
+      if( $(texto).val()==1 || $(texto2).val()==1 )
       {
           console.log('no es no');
       }
