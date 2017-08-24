@@ -22,20 +22,23 @@ Diagnostico paciente
       var pregunta= {!! json_encode($sintomas->toArray()) !!};
       var texto = "#text"+i;
       var texto2 = "#text"+j;
-      if( $(texto).val()==1 || $(texto2).val()==1 )
+      if(j==1)
+      {
+        if($(texto2).val()!=1){
+          k=j-1;
+          html=html+pregunta[k].desSin+'<br/>';
+        }
+      }else{
+      if( $(texto).val()==1 )
       {
           console.log('no es no');
       }
        else{
-         if(j==1){
-           k=j-1;
-           html=html+pregunta[k].desSin+'<br/>';
-           html=html+pregunta[j].desSin+'<br/>';
-         }else{
         con = con+1;
         total = total + parseInt($(texto).val());
         html=html+pregunta[j].desSin+'<br/>';
         }
+      }
       }
     }
     if (con==0) {
