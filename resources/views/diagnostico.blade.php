@@ -24,7 +24,7 @@ Diagnostico paciente
       var texto2 = "#text"+j;
       if(j==1)
       {
-        if($(texto2).val()==1){
+        if( $(texto2).val()==1 ){
           }
         else
           {
@@ -43,7 +43,7 @@ Diagnostico paciente
         }
       }
       }
-    }
+    
     if (con==0) {
       alert("El paciente tiene 0% de probabildad de tener una enfermedad tropical");
     }
