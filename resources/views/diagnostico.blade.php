@@ -19,6 +19,10 @@ Diagnostico paciente
     for(var i=2; i<=40;i++)
     {
       var j=i-1;
+      if(j==1){
+        k=j-1;
+        html=html+pregunta[k].desSin+'<br/>';
+      }
       var texto = "#text"+i;
       if( $(texto).val()==1 )
       {
