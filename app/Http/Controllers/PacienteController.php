@@ -30,11 +30,12 @@ class PacienteController extends Controller
     public function listar()
     {
         $pacientes= Paciente::get();
+        	// dd($pacientes);
         return view('listapacientes')->with('pacientes',$pacientes);
     }
      public function registrar(Request $request)
     {
-        
+
     }
 
 

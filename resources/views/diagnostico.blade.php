@@ -7,26 +7,18 @@ Diagnostico paciente
   function calcular(valor,id)
   {
       var texto = "#text"+id;
-      $(texto).val(valor); 
-         
+      $(texto).val(valor);
+
   }
   function porcentaje(id, var1)
   {
     var res= "#resultado"+id;
     var con = 0;
     var total =0;
-    for(var i=1; i=40; i++){
-      var sint= '$sintomas['+i+']->desSin';
-      var sint2= <?php echo '<script> i </script>' ?>
-      if($('#text'+i).val==0){
-
-      }
-      else{
-        console.log(sint2);
-      }
-    }
-    for(var i=2; i=40;i++)
+    var html='';
+    for(var i=2; i<=40;i++)
     {
+      var j=i-1;
       var texto = "#text"+i;
       if( $(texto).val()==1 )
       {
@@ -35,7 +27,8 @@ Diagnostico paciente
        else{
         con = con+1;
         total = total + parseInt($(texto).val());
-        console.log($(texto).val());
+        var pregunta= {!! json_encode($sintomas->toArray()) !!};
+        html=html+pregunta[j].desSin+'<br/>';
       }
     }
     if (con==0) {
@@ -48,8 +41,11 @@ Diagnostico paciente
         console.log(con);
         $(res).val(por);
         var vent = 'ventana'+id;
+        var resultados= 'resultados'+id;
         var elemento = document.getElementById(vent);
+        document.getElementById(resultados).innerHTML = html+'<br/>';
       elemento.style.display=var1;
+
     }
   }
 </script>
@@ -77,8 +73,8 @@ Diagnostico paciente
         </div>
       </div>
       <div class="modal-footer">
-        <button  data-dismiss="modal" type="button" class="btn btn-info" data-toggle="modal" data-target="#modal2" onclick="javascript:calcular('0','1');">SI</button>
-        <button  data-dismiss="modal" type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal2" onclick="javascript:calcular('0','1');">NO</button>
+        <button  data-dismiss="modal" type="button" class="btn btn-info" data-toggle="modal" data-target="#modal2" onclick="javascript:calcular('1','1');">SI</button>
+        <button  data-dismiss="modal" type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal2" onclick="javascript:calcular('1','1');">NO</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -96,7 +92,7 @@ Diagnostico paciente
           <div class="col-md-4" style="margin-top:20%;float:right; height:50px; width:350px;"><font size="5">¿Presenta fiebre?</font></div>
           <div> <img src="{{url('imagenes/movimiento.gif')}}" style="height:270px; width:190px; float:left; margin-left:7%;"/></div>
           <?php
-            for ($i=1; $i < 40; $i++) { 
+            for ($i=1; $i <= 40; $i++) {
               echo '<input type="hidden" id="text'.$i.'" name="text'.$i.'" value="1">';
             }
            ?>
@@ -258,6 +254,9 @@ Diagnostico paciente
           <div class="col-md-4"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('5','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana5">
           <input type="text" id="resultado5" style="border:none;">
+          <div class="well" id="resultados5">
+
+          </div>
           </div>
           </div>
         </div>
@@ -412,6 +411,9 @@ Diagnostico paciente
           <div class="col-md-4"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('1','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana1">
           <input type="text" id="resultado1" style="border:none;">
+          <div class="well" id="resultados1">
+
+          </div>
           </div>
           </div>
         </div>
@@ -544,6 +546,9 @@ Diagnostico paciente
           <div class="col-md-4"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('2','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana2" style="border:none;">
           <input type="text" id="resultado2">
+          <div class="well" id="resultados2">
+
+          </div>
           </div>
           </div>
         </div>
@@ -698,6 +703,9 @@ Diagnostico paciente
           <div class="col-md-4"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('3','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana3">
           <input type="text" id="resultado3"  style="border:none;">
+          <div class="well" id="resultados3">
+
+          </div>
           </div>
           </div>
         </div>
@@ -852,6 +860,9 @@ Diagnostico paciente
           <div class="col-md-4"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('4','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana4">
           <input type="text" id="resultado4" style="border:none;">
+          <div class="well" id="resultados4">
+
+          </div>
           </div>
           </div>
         </div>
@@ -940,6 +951,9 @@ Diagnostico paciente
           <div class="col-md-4"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('6','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana6">
           <input type="text" id="resultado6" style="border:none;">
+          <div class="well" id="resultados6">
+
+          </div>
           </div>
           </div>
         </div>
@@ -1006,6 +1020,9 @@ Diagnostico paciente
           <div class="col-md-4"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('7','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana7">
           <input type="text" id="resultado7" style="border:none;">
+          <div class="well" id="resultados7">
+
+          </div>
           </div>
           </div>
         </div>
@@ -1090,7 +1107,7 @@ Diagnostico paciente
       </div>
       <div class="modal-body">
         <div class="row">
-          <div class="col-md-4" style="margin-top:20%;float:right; height:50px; width:350px;"><font size="5">¿Presents formacion de una bolsa lateral en donde se acumulan los alimentos?</font></div>
+          <div class="col-md-4" style="margin-top:20%;float:right; height:50px; width:350px;"><font size="5">¿Presenta formacion de una bolsa lateral en donde se acumulan los alimentos?</font></div>
           <div> <img src="{{url('imagenes/movimiento.gif')}}" style="height:270px; width:190px; float:left; margin-left:7%;"/></div>
         </div>
       </div>
@@ -1115,7 +1132,10 @@ Diagnostico paciente
           <div class="col-md-4">Presenta Chagas Cronico en un:</div>
           <div class="col-md-4"><button class="btn btn-danger btn-lg active" type="button" onclick="javascript:porcentaje('8','block');">Ver porcentaje</button>
           <div style="display:none" id="ventana8">
-          <input type="text" id="resultado7" style="border:none;">
+          <input type="text" id="resultado8" style="border:none;">
+          <div class="well" id="resultados8">
+
+          </div>
           </div>
           </div>
         </div>

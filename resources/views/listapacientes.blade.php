@@ -14,13 +14,15 @@ Lista pacientes
       <th style="width:10%;">PACIENTE</th>
       <th style="width:10%;">APELLIDOS</th>
       <th style="width:10%;">DIRECCIÓN</th>
-			<th data-orderable="false">ACCIONES </th>	
+			<th data-orderable="false">ACCIONES </th>
 		</tr>
 	</thead>
 	<tbody style="font-size:11px;">
-     <?php if(count($pacientes)>0):?>
+     <?php
+	
+		 if(count($pacientes)>0):?>
       <tr>
-        <?php  
+        <?php
           foreach ($pacientes as $paciente):
           ?>
             <th><?php echo $paciente->ciPac;?></th>
@@ -32,7 +34,7 @@ Lista pacientes
             <!-- Trigger the modal with a button -->
             <div>
               <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal"><font size="2">Modificar</font><span class="glyphicon glyphicon-pencil"></span></button>
-            
+
             <!-- Modal -->
             <div class="modal fade" id="myModal" role="dialog" style="margin-top:120px;">
             <div class="modal-dialog">
@@ -47,19 +49,19 @@ Lista pacientes
               <div class="form-group">
               <label for="ejemplo_email_3" class="col-lg-2 control-label">Nombre:</label>
                 <div class="col-lg-5">
-                  <input type="text" class="form-control" name="nombrepac2" 
+                  <input type="text" class="form-control" name="nombrepac2"
                   placeholder="Nombre">
                 </div>
               </div>
               <div class="form-group">
               <label for="ejemplo_password_3" class="col-lg-2 control-label">Apellido paterno:</label>
                 <div class="col-lg-4">
-                  <input type="text" class="form-control" name="paternopac2" 
+                  <input type="text" class="form-control" name="paternopac2"
                     placeholder="Apellido paterno">
                 </div>
               <label for="ejemplo_password_3" class="col-lg-2 control-label">Apellido materno:</label>
                 <div class="col-lg-4">
-                  <input type="" class="form-control" name="maternoopac2" 
+                  <input type="" class="form-control" name="maternoopac2"
                     placeholder="Apellido materno">
                   </div>
               </div>
@@ -79,7 +81,7 @@ Lista pacientes
               <div class="form-group">
                 <label for="ejemplo_password_3" class="col-lg-2 control-label">Cédula de identidad:</label>
               <div class="col-lg-2">
-                <input type="number" class="form-control" name="carnetpac2" 
+                <input type="number" class="form-control" name="carnetpac2"
                 placeholder="CI">
               </div>
                 <label for="ejemplo_password_3" class="col-lg-0 control-label"></label>
@@ -98,14 +100,14 @@ Lista pacientes
               </div>
                 <label for="ejemplo_password_3" class="col-lg-2 control-label">Telefono:</label>
               <div class="col-lg-4">
-                <input type="number" class="form-control" name="telefonopac2" 
+                <input type="number" class="form-control" name="telefonopac2"
                 placeholder="Telefono del paciente">
               </div>
               </div>
               <div class="form-group">
               <label for="ejemplo_password_3" class="col-lg-2 control-label">Ocupación:</label>
               <div class="col-lg-4">
-                <input type="text" class="form-control" name="ocupacionpac2" 
+                <input type="text" class="form-control" name="ocupacionpac2"
                 placeholder="Ocupación">
               </div>
                 <label for="ejemplo_email_3" class="col-lg-2 control-label">Dirección:</label>
@@ -126,7 +128,7 @@ Lista pacientes
             <span class="glyphicon glyphicon-trash"></span>
             </button>
               <a class="btn btn-warning" href="{{$paciente->id}}/diagpaciente"><font size="2">Evaluacion</font><span class="glyphicon glyphicon-th-list"></span></a>
-            </th> 
+            </th>
             </div>
             </center>
       </tr>
